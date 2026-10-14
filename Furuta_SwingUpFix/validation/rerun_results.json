@@ -1,0 +1,99 @@
+{
+  "mujoco_version": "3.16.0",
+  "step_s": 0.001,
+  "tests": [
+    {
+      "first_capture_s": 1.2550000000000001,
+      "mode_switches": 1,
+      "max_arm_deg": 98.8422655451114,
+      "min_top_error_deg": 7.136552003150295e-07,
+      "tail_5s_max_top_error_deg": 0.16964967374247153,
+      "peak_torque_Nm": 0.01,
+      "balanced_at_end": true,
+      "case": "nominal",
+      "pass": true
+    },
+    {
+      "first_capture_s": 1.272,
+      "mode_switches": 1,
+      "max_arm_deg": 97.90791305362977,
+      "min_top_error_deg": 1.4845211037738643e-05,
+      "tail_5s_max_top_error_deg": 0.16964862892257443,
+      "peak_torque_Nm": 0.01,
+      "balanced_at_end": true,
+      "case": "phi_plus",
+      "pass": true
+    },
+    {
+      "first_capture_s": 1.387,
+      "mode_switches": 1,
+      "max_arm_deg": 79.54354237726282,
+      "min_top_error_deg": 1.7877785031538332e-06,
+      "tail_5s_max_top_error_deg": 0.16964894882857706,
+      "peak_torque_Nm": 0.01,
+      "balanced_at_end": true,
+      "case": "phi_minus",
+      "pass": true
+    },
+    {
+      "first_capture_s": 1.2730000000000001,
+      "mode_switches": 1,
+      "max_arm_deg": 107.87362795097908,
+      "min_top_error_deg": 2.476392088317471e-06,
+      "tail_5s_max_top_error_deg": 0.16964928394931264,
+      "peak_torque_Nm": 0.01,
+      "balanced_at_end": true,
+      "case": "arm_plus",
+      "pass": true
+    },
+    {
+      "first_capture_s": 1.247,
+      "mode_switches": 1,
+      "max_arm_deg": 89.41761591143846,
+      "min_top_error_deg": 4.830613778876938e-06,
+      "tail_5s_max_top_error_deg": 0.1696490243977561,
+      "peak_torque_Nm": 0.01,
+      "balanced_at_end": true,
+      "case": "arm_minus",
+      "pass": true
+    },
+    {
+      "first_capture_s": 1.2530000000000001,
+      "mode_switches": 1,
+      "max_arm_deg": 98.56246708840688,
+      "min_top_error_deg": 3.0914566581719937e-07,
+      "tail_5s_max_top_error_deg": 0.16964909824453625,
+      "peak_torque_Nm": 0.01,
+      "balanced_at_end": true,
+      "case": "velocity",
+      "pass": true
+    }
+  ],
+  "Original": {
+    "first_capture_s": null,
+    "mode_switches": 0,
+    "max_arm_deg": 4.831843360561369,
+    "min_top_error_deg": 173.6689400840243,
+    "tail_5s_max_top_error_deg": 179.85876144689922,
+    "peak_torque_Nm": 0.008,
+    "balanced_at_end": false
+  },
+  "XML units only": {
+    "first_capture_s": null,
+    "mode_switches": 0,
+    "max_arm_deg": 136.9812222119991,
+    "min_top_error_deg": 61.605591616880126,
+    "tail_5s_max_top_error_deg": 179.99976287638665,
+    "peak_torque_Nm": 0.01,
+    "balanced_at_end": false
+  },
+  "Full correction": {
+    "first_capture_s": 1.2550000000000001,
+    "mode_switches": 1,
+    "max_arm_deg": 98.8422655451114,
+    "min_top_error_deg": 7.136552003150295e-07,
+    "tail_5s_max_top_error_deg": 0.16964967374247153,
+    "peak_torque_Nm": 0.01,
+    "balanced_at_end": true
+  }
+}

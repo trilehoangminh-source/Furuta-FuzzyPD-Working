@@ -1,0 +1,13 @@
+{
+  "max_phi_deg": 179.9999992863441,
+  "min_top_error_deg": 7.136559382037155e-07,
+  "max_arm_deg": 98.8422655451114,
+  "max_energy_ratio": 1.31435861542195,
+  "balance_time_s": 48.745000000000005,
+  "final_top_error_deg": 0.16959786033090574,
+  "final_arm_deg": 1.2486926947768304,
+  "mujoco_version": "3.5.0",
+  "mode_switch_count": 1,
+  "first_capture_s": 1.2550000000000001,
+  "tail_5s_max_error_deg": 0.16964870237165808
+}
