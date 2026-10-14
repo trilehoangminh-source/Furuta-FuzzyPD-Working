@@ -118,21 +118,8 @@ numel(fis.Rules)  % Kết quả mong đợi: 25
 - XML cần diễn giải giới hạn góc đúng đơn vị. Ở bản sửa thành công đã sử dụng cấu hình `compiler angle="radian"`; hãy kiểm tra thuộc tính này trong XML nếu có giới hạn khớp khai báo bằng radian.
 - Không ghép controller xuất mô-men với XML sử dụng `<position>` actuator.
 
-## 6. Dấu hiệu mô phỏng chạy đúng
 
-Theo kết quả chạy trên máy phát triển (ngày 14/10/2026):
-
-| Tín hiệu | Kỳ vọng khi chạy đúng |
-|---|---|
-| `swing_mode` | Ban đầu **0** (swing-up), sau đó chuyển thành **1** (balance) và duy trì |
-| Góc con lắc | Tiến đến vùng thẳng đứng và duy trì gần vị trí cân bằng (đối chiếu quy ước góc trong model) |
-| `phi_dot` | Giảm về gần **0 rad/s** trong giai đoạn balance |
-| Góc cánh tay `alpha` | Dao động hữu hạn, không mắc ở giới hạn khớp |
-| `motor_torque_Nm` | Có tín hiệu mô-men tương ứng với lệnh điều khiển |
-
-Trong lần chạy đã báo cáo, thời điểm chuyển sang balance khoảng **1,26 giây**. Đây là **mốc tham khảo của một cấu hình**, không phải thời gian bảo đảm trên mọi máy/thay đổi mô hình.
-
-## 7. Khắc phục lỗi thường gặp
+## 6. Khắc phục lỗi thường gặp
 
 | Lỗi | Cách kiểm tra |
 |---|---|
@@ -142,28 +129,9 @@ Trong lần chạy đã báo cáo, thời điểm chuyển sang balance khoảng
 | Con lắc giật, không swing-up | Kiểm tra XML/đơn vị góc, actuator loại torque, compiler và đúng bản `.slx`; chưa vội đổi gains |
 | Model có cảnh báo đường dẫn `C:\...` | Máy mới đang dùng đường dẫn cũ; sửa bằng đường dẫn mới trên máy đó |
 
-## 8. Cách làm việc nhóm an toàn
 
-**Giữ nguyên bản chạy được trước khi thử thuật toán mới.** Mỗi lần chỉnh sửa:
 
-```powershell
-git status
-git add .
-git commit -m "Describe changes"
-git push
-```
-
-Nên tạo nhánh riêng để thử nghiệm:
-
-```powershell
-git switch -c experiment/neural-controller
-```
-
-Không commit thư mục `.venv/`, `slprj/`, cache `.slxc` hoặc file có thông tin đăng nhập.
-
-Khi đã lưu bản đầu tiên, nên gắn tag Git, ví dụ `v1.0-fuzzy-working`, để cả nhóm quay lại bản ổn định khi cần.
-
-## 9. Nguồn tham khảo
+## 7. Nguồn tham khảo
 
 - S.-E. Oltean (2014), *Swing-up and stabilization of the rotational inverted pendulum using PD and fuzzy-PD controllers*, Procedia Technology 12, 57–64.
 - R. Agrawal và R. Mitra (2013), *Adaptive Neuro Fuzzy Inference Structure Controller for Rotary Inverted Pendulum*.
